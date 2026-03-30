@@ -1,0 +1,16 @@
+# Developing stuff
+
+build*
+out*
+target
+
+deprecated
+
+# VS Code
+
+*.code-workspace
+
+# Emacs
+
+*#
+~*
