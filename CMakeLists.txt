@@ -2,9 +2,10 @@
 #                      PREREQUISITES                    #
 # ----------------------------------------------------- #
 
-cmake_minimum_required(VERSION 3.16)
-project(COS_Text_Editor C CXX)
+cmake_minimum_required(VERSION 3.25)
+project(Epitaph C CXX)
 
+include(cmake/cmake_check.cmake)
 include(cmake/cmake_options.cmake)
 include(cmake/cmake_dirs.cmake)
 
@@ -14,10 +15,10 @@ include(cmake/cmake_dirs.cmake)
 #                  EXEQUTABLE AND LIBS                  #
 # ----------------------------------------------------- #
 
-add_executable(cos_text_editor 
+add_executable(Epitaph 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
 )
 
-target_link_libraries(cos_text_editor
-    cos_bridge
+target_link_libraries(Epitaph
+    epitaph_bridge
 )

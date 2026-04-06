@@ -1,0 +1,12 @@
+# Project languages
+*.c                     linguist-language=C
+*.cpp                   linguist-language=C++
+*.asm                   linguist-language=Assembly
+
+# Project configurations and scripts
+*.cmake                 linguist-language=CMake
+*.lua                   linguist-language=Lua
+*.sh                    linguist-language=Bash
+
+# Third-party code
+libs/**/**              linguist-vendored
