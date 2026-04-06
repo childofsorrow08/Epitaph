@@ -9,8 +9,6 @@ include(cmake/cmake_check.cmake)
 include(cmake/cmake_options.cmake)
 include(cmake/cmake_dirs.cmake)
 
-# TODO: Add mingw toolchain
-
 # ----------------------------------------------------- #
 #                  EXEQUTABLE AND LIBS                  #
 # ----------------------------------------------------- #
