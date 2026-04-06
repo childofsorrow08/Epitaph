@@ -11,6 +11,7 @@ If you'd like to learn more, you can check out these other documents:
 - Acknowledgments for inspiration/ideas: [THANKS.md](docs/THANKS.md)
 - A list of the libraries and tools used to assist in development, along with our thanks to them: [THIRD-PARTY.md](docs/THIRD-PARTY.md)
 - If you'd like to contribute to the project, you can learn more about the needs or opportunities here: [CONTRIBUTING.md](docs/CONTRIBUTING.md)
+- A to-do list where I write down (and sometimes forget) everything I plan to do: [TODO.md](docs/TODO.md)
 
 # How to build on Windows:
 
