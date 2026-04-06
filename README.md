@@ -3,6 +3,8 @@ A simple and minimalist text editor written in C for Windows and Linux as a pers
 
 I believe in the superiority of Assembly, C, and C++ over other languages, which is why I chose them for this project. I also appreciate the aesthetic appeal of software that looks raw and technical, and that was my motivation for designing the interface the way it is. As for functionality, I’ve always preferred software that does exactly what it’s supposed to do, without unnecessary frills or endless features and capabilities.
 
+Currently in the early stages of development.
+
 If you'd like to learn more, you can check out these other documents:
 - Acknowledgments for inspiration/ideas: [THANKS.md](docs/THANKS.md)
 - A list of the libraries and tools used to assist in development, along with our thanks to them: [THIRD-PARTY.md](docs/THIRD-PARTY.md)
