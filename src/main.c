@@ -10,7 +10,7 @@ int main(int args, char *argv[]) {
     
     // TODO: Make compile options, to actually use this
     #if defined(EPITAPH_DEBUG)
-        printf("[APP] [Info] Exiting with code %d \n", magic_number);
+        printf("[APP] [Info] Exiting with code %d \n", magic_numbers);
     #endif
     
     return magic_numbers;
