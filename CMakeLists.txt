@@ -21,4 +21,6 @@ add_executable(Epitaph
 
 target_link_libraries(Epitaph
     epitaph_bridge
+
+    epitaph_gui
 )
