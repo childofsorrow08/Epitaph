@@ -9,4 +9,4 @@
 *.sh                    linguist-language=Bash
 
 # Third-party code
-libs/miniaudio/**              linguist-vendored
+libs/miniaudio/**       linguist-vendored
