@@ -8,6 +8,7 @@ project(Epitaph C CXX)
 include(cmake/cmake_check.cmake)
 include(cmake/cmake_options.cmake)
 include(cmake/cmake_dirs.cmake)
+include(cmake/cmake_commands.cmake)
 
 # ----------------------------------------------------- #
 #                  EXEQUTABLE AND LIBS                  #
@@ -15,6 +16,9 @@ include(cmake/cmake_dirs.cmake)
 
 add_executable(Epitaph 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
+
+    # Assets
+    ${GEN_SRC}
 )
 
 target_link_libraries(Epitaph

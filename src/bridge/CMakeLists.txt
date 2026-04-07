@@ -1,6 +1,5 @@
-add_library(epitaph_bridge STATIC 
-    src/main.c
-    src/exit_code.c
+add_library(epitaph_bridge STATIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/exit_code.c
 )
 
 target_include_directories(epitaph_bridge 
