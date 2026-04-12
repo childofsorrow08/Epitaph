@@ -16,9 +16,6 @@ include(cmake/cmake_commands.cmake)
 
 add_executable(Epitaph 
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
-
-    # Assets
-    ${GEN_SRC}
 )
 
 target_link_libraries(Epitaph
