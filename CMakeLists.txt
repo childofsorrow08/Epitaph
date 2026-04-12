@@ -8,6 +8,7 @@ project(Epitaph C CXX)
 include(cmake/cmake_check.cmake)
 include(cmake/cmake_options.cmake)
 include(cmake/cmake_dirs.cmake)
+include(cmake/cmake_commands.cmake)
 
 # ----------------------------------------------------- #
 #                  EXEQUTABLE AND LIBS                  #
