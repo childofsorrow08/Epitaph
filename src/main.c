@@ -27,10 +27,13 @@
 #endif
 
 #include "epitaph_exit_code.h"
+#include <epitaph_gui.h>
 
 int main(int args, char *argv[]) {
 
     magic_numbers = EPITAPH_SUCCESS;
+
+    magic_numbers = start_gui();
     
     #if defined(EPITAPH_DEBUG)
         printf("[APP] [Info] Exiting with code %d \n", magic_numbers);

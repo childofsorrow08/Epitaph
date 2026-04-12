@@ -4,13 +4,9 @@ local output_h = "build/generated/include/epitaph_assets.h"
 
 local function map_variable_name(filename)
     local name = filename:gsub("%.ttf$", "")
-    
-    name = name:gsub("([%l%d])(%u)", "%1_%2")
-    
-    name = name:gsub("%-", "_")
-    
+    name = name:gsub("[%s%-]", "_")
     name = name:lower()
-    
+    name = name:gsub("ibm_plex_sans", "ibmplex_sans")
     name = name:gsub("__+", "_")
     
     return name
@@ -74,7 +70,7 @@ for _, asset in ipairs(ttf_files) do
         end
         file_c:write("\n};\n")
         file_c:write(string.format("const size_t %s_len = %d;\n\n", asset.var_name, size))
-        print("Generated: " .. asset.var_name)
+        print("Generated variable: " .. asset.var_name)
     end
 end
 

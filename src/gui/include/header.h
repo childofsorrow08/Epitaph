@@ -61,6 +61,7 @@ typedef struct app_context {
 
     // Different stuff to check or display
     current_page current_page_info; 
+    window_work alive;
 } app_context;
 
 
