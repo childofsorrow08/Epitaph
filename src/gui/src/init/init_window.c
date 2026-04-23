@@ -6,7 +6,7 @@ app_context init_sdl_window() {
     app.width = 1200;
     app.height = 800;
     app.alive = true;
-    app.current_page_info = EPITAPH_HOME;
+    app.current_page = EPITAPH_HOME;
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS | SDL_INIT_TIMER) < 0) {
         printf("[SDL] [Error] Failed to init: %s\n", SDL_GetError());

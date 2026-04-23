@@ -13,6 +13,9 @@ add_library(epitaph_gui
     ${CMAKE_CURRENT_SOURCE_DIR}/src/init/fonts/yuji_boku_24.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/init/fonts/yuji_boku_45.c
 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/pages/home_page.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/pages/settings_page.c
+
     # some shit
     ${cimgui_SOURCE_DIR}/imgui/backends/imgui_impl_sdl2.cpp
     ${cimgui_SOURCE_DIR}/imgui/backends/imgui_impl_sdlrenderer2.cpp

@@ -36,6 +36,7 @@ typedef enum window_work {
 
 typedef enum current_page {
     EPITAPH_HOME,
+    EPITAPH_SETTINGS,
 } current_page;
 
 // Structs
@@ -60,7 +61,7 @@ typedef struct app_context {
     ImFont* font_yuji_16;                   // Yuji Boku                - 16 px
 
     // Different stuff to check or display
-    current_page current_page_info; 
+    current_page current_page; 
     window_work alive;
 } app_context;
 

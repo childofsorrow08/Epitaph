@@ -1,5 +1,6 @@
 #include "epitaph_exit_code.h"
 #include <header.h>
+#include <pages.h>
 
 exit_code start_gui() {
 
@@ -21,24 +22,44 @@ exit_code start_gui() {
     SDL_EventState(SDL_DROPFILE, SDL_ENABLE);
 
     while(app.alive == EPITAPH_WINDOW_WORKS) {
+
+        /* Events */
+
         while(SDL_PollEvent(&event)) {
             ImGui_ImplSDL2_ProcessEvent_C(&event);
 
             if(event.type == SDL_QUIT) app.alive = EPITAPH_WINDOW_CLOSED;
-
-            if(event.type == SDL_KEYDOWN) {
-                if(event.key.keysym.sym == SDLK_F11) {
-                    Uint32 flags = SDL_GetWindowFlags(app.win);
-                    if (flags & SDL_WINDOW_FULLSCREEN) { 
-                        SDL_SetWindowFullscreen(app.win, 0); 
-                    } else { 
-                        SDL_SetWindowFullscreen(app.win, SDL_WINDOW_FULLSCREEN_DESKTOP); 
-                    }
-                }
-            }
         }
 
+        /* ImGUI new frame */
+
+        ImGui_ImplSDLRenderer2_NewFrame_C();
+        ImGui_ImplSDL2_NewFrame_C();
+        igNewFrame();
+
+        /* Pages */
+
+        if(app.current_page == EPITAPH_HOME) {
+            epitaph_home_page(&app);
+        }
+
+        if(app.current_page == EPITAPH_SETTINGS) {
+            epitaph_settings_page(&app);
+        }
+
+        /* Dialogue windows */
+        // todo
+
+        /* renderer end */
         SDL_GetWindowSize(app.win, &app.width, &app.height);
+        igRender();
+        SDL_SetRenderDrawColor(app.renderer, 30, 30, 30, 255);
+        SDL_RenderClear(app.renderer);
+        ImGui_ImplSDLRenderer2_RenderDrawData_C(igGetDrawData(), app.renderer);
+        SDL_RenderPresent(app.renderer);
+
+        // FPS lock i guess (120 fps)
+        SDL_Delay(8);
     }
 
 cleanup:
