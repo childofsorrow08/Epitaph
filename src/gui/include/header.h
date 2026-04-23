@@ -8,6 +8,7 @@
 
 #include <stdbool.h>
 
+#include "epitaph_exit_code.h"
 #include <epitaph_assets.h>
 
 #define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
@@ -15,7 +16,6 @@
 #include <cimgui_impl.h>
 
 #include <SDL2/SDL.h>
-// #include <SDL2/SDL_image.h>
 
 // things from stuff.cpp
 extern bool ImGui_ImplSDL2_InitForSDLRenderer_C(SDL_Window* window, SDL_Renderer* renderer);

@@ -15,7 +15,7 @@ app_context init_sdl_window() {
     }
 
     app.win = SDL_CreateWindow(
-        "Requiem", 
+        "Epitaph", 
         SDL_WINDOWPOS_CENTERED, 
         SDL_WINDOWPOS_CENTERED, 
         app.width, 

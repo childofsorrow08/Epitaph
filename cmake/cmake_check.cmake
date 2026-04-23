@@ -11,3 +11,4 @@ if(WIN32 AND NOT MINGW)
     message(STATUS      "I cannot guarantee that other compilers will work.")
     
 endif()
+

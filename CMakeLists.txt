@@ -23,3 +23,11 @@ target_link_libraries(Epitaph
 
     epitaph_gui
 )
+
+if(MINGW)
+    target_link_options(Epitaph PUBLIC 
+        -static-libgcc 
+        -static-libstdc++ 
+        -static
+    )
+endif()
