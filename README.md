@@ -1,6 +1,6 @@
 # Epitaph
 
-A simple and minimalist text editor written in C for Windows and Linux as a project for learning (and, well, maybe a little for fun), distributed under the MIT License.
+A simple and minimalist text editor written in C/C++ for Windows and Linux as a project for learning (and, well, maybe a little for fun), distributed under the MIT License.
 
 I believe in the superiority of Assembly, C, and C++ over other languages, which is why I chose them for this project. I also appreciate the aesthetic appeal of software that looks raw and technical, and that was my motivation for designing the interface the way it is. As for functionality, I’ve always preferred software that does exactly what it’s supposed to do, without unnecessary frills or endless features and capabilities.
 
